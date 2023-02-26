@@ -12,7 +12,7 @@ const connect = function() {
 
     // hard-coded move command
     // setInterval(() => {
-    //   conn.write('Move: up')   
+    //   conn.write('Move: up')
     // }, 50);
   });
 
