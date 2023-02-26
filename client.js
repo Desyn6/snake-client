@@ -5,6 +5,11 @@ const connect = function() {
     host: "localhost",
     port: 50541
   });
+  
+  conn.on('connect', () => {
+    console.log('Successfully connected to game server!');
+    conn.write('Name: SNK');
+  });
 
   // Define encoding
   conn.setEncoding("utf8");
