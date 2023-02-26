@@ -11,11 +11,6 @@ const connect = function() {
   conn.on('connect', () => {
     console.log('Successfully connected to game server!');
     conn.write(`Name: ${USERNAME}`);
-
-    // hard-coded move command
-    // setInterval(() => {
-    //   conn.write('Move: up')
-    // }, 50);
   });
 
   // Define encoding

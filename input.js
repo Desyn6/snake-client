@@ -27,13 +27,13 @@ const handleUserInput = function(key) {
 
   // store direction string in object
   const commands = {
-    [UPKEY]: 'Move: up',     //w key
-    [LEFTKEY]: 'Move: left',   //a key
-    [DOWNKEY]: 'Move: down',   //s key
-    [RIGHTKEY]: 'Move: right',  //d key
-    [MSG1KEY]: `Say: ${MSG1}`,     //q key
-    [MSG2KEY]: `Say: ${MSG2}`,    //e key
-    [MSG3KEY]: `Say: ${MSG3}`, //r key
+    [UPKEY]: 'Move: up',
+    [LEFTKEY]: 'Move: left',
+    [DOWNKEY]: 'Move: down',
+    [RIGHTKEY]: 'Move: right',
+    [MSG1KEY]: `Say: ${MSG1}`,
+    [MSG2KEY]: `Say: ${MSG2}`,
+    [MSG3KEY]: `Say: ${MSG3}`,
   };
 
   // only process command if input key is recognized
