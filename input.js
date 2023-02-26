@@ -1,4 +1,15 @@
-const { connect } = require("http2");
+const {
+  UPKEY,
+  LEFTKEY,
+  DOWNKEY,
+  RIGHTKEY,
+  MSG1,
+  MSG1KEY,
+  MSG2,
+  MSG2KEY,
+  MSG3,
+  MSG3KEY
+} = require('./constants');
 
 const setupInput = (conn) => {
   connection = conn;
@@ -16,13 +27,13 @@ const handleUserInput = function(key) {
 
   // store direction string in object
   const commands = {
-    '\u0077': 'Move: up',     //w key
-    '\u0061': 'Move: left',   //a key
-    '\u0073': 'Move: down',   //s key
-    '\u0064': 'Move: right',  //d key
-    '\u0071': 'Say: Hi!',     //q key
-    '\u0065': 'Say: Bye!',    //e key
-    '\u0072': 'Say: Gotcha!', //r key
+    [UPKEY]: 'Move: up',     //w key
+    [LEFTKEY]: 'Move: left',   //a key
+    [DOWNKEY]: 'Move: down',   //s key
+    [RIGHTKEY]: 'Move: right',  //d key
+    [MSG1KEY]: `Say: ${MSG1}`,     //q key
+    [MSG2KEY]: `Say: ${MSG2}`,    //e key
+    [MSG3KEY]: `Say: ${MSG3}`, //r key
   };
 
   // only process command if input key is recognized
