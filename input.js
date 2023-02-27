@@ -36,8 +36,8 @@ const handleUserInput = function(key) {
     [MSG3KEY]: `Say: ${MSG3}`,
   };
 
-  // only process command if input key is recognized
-  if (Object.keys(commands).includes(key)) {
+  // only process command if input key is mapped with a value
+  if (commands[key]) {
     // send directions using key in object
     connection.write(commands[key]);
   }

@@ -5,16 +5,16 @@ const ENCODING = 'utf8';
 const USERNAME = 'SNK';
 
 // user-input constants
-const UPKEY = '\u0077';     //w
-const LEFTKEY = '\u0061';   //a
-const DOWNKEY = '\u0073';   //s
-const RIGHTKEY = '\u0064';  //d
-const MSG1KEY = '\u0071';   //q
+const UPKEY = 'w';
+const LEFTKEY = 'a';
+const DOWNKEY = 's';
+const RIGHTKEY = 'd';
+const MSG1KEY = 'q';
 const MSG1 = 'Hi!';
-const MSG2KEY = '\u0065';
-const MSG2 = 'Bye!';        //e
-const MSG3KEY = '\u0072';
-const MSG3 = 'Gotcha!';     //r
+const MSG2KEY = 'e';
+const MSG2 = 'Bye!';
+const MSG3KEY = 'r';
+const MSG3 = 'Gotcha!';
 
 module.exports = {
   IP,
